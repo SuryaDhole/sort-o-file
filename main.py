@@ -42,5 +42,6 @@ for file_name in working_directory_files_list:
         destination_file_path = os.path.join(working_directory_path, category_path).join(file_name)
         destination_file_path = os.path.join(working_directory_path).join(category_path).join(file_name)
         destination_file_path = f"{working_directory_path}\\{category_path}\\{file_name}"
+        destination_file_path = category_path
     """
     shutil.move(source_file_path, destination_file_path)
